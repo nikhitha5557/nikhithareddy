@@ -107,16 +107,18 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Enhanced Profile Section */}
+        {/* Enhanced Profile Section with Square Mask */}
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
             {/* Main profile container with glassmorphism effect */}
             <div className="relative w-96 h-96 rounded-2xl bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm border border-white/20 shadow-2xl overflow-hidden">
-              {/* Profile image placeholder with better styling */}
-              <div className="absolute inset-4 rounded-xl bg-gradient-to-br from-primary/20 to-blue-600/20 flex items-center justify-center">
-                <div className="w-full h-full rounded-xl bg-gradient-to-br from-primary/10 to-blue-600/10 flex items-center justify-center">
-                  <div className="text-8xl font-bold text-primary">NR</div>
-                </div>
+              {/* Profile image with square mask */}
+              <div className="absolute inset-4 rounded-xl overflow-hidden">
+                <img
+                  src="https://i.postimg.cc/yd5dHXh0/Whats-App-Image-2025-06-07-at-15-57-08-2216a66a.jpg"
+                  alt="Nikhitha Reddy Gottimukkula"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
               
               {/* Floating tech badges */}
