@@ -1,17 +1,15 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown, MapPin, Calendar, Award } from "lucide-react";
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4 pt-16 relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4 pt-16 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
@@ -74,19 +72,10 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button 
-              size="lg" 
-              onClick={() => scrollToSection("portfolio")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
+            <Button size="lg" onClick={() => scrollToSection("portfolio")} className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg">
               View My Work
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => scrollToSection("contact")}
-              className="px-8 py-4 text-lg transition-all duration-300 hover:scale-105 border-2"
-            >
+            <Button variant="outline" size="lg" onClick={() => scrollToSection("contact")} className="px-8 py-4 text-lg transition-all duration-300 hover:scale-105 border-2">
               Let's Connect
             </Button>
           </div>
@@ -114,11 +103,7 @@ const Hero = () => {
             <div className="relative w-96 h-96 rounded-2xl bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm border border-white/20 shadow-2xl overflow-hidden">
               {/* Profile image with square mask */}
               <div className="absolute inset-4 rounded-xl overflow-hidden">
-                <img
-                  src="https://i.postimg.cc/yd5dHXh0/Whats-App-Image-2025-06-07-at-15-57-08-2216a66a.jpg"
-                  alt="Nikhitha Reddy Gottimukkula"
-                  className="w-full h-full object-cover object-center"
-                />
+                <img src="https://i.postimg.cc/yd5dHXh0/Whats-App-Image-2025-06-07-at-15-57-08-2216a66a.jpg" alt="Nikhitha Reddy Gottimukkula" className="w-full h-full object-cover object-center" />
               </div>
               
               {/* Floating tech badges */}
@@ -131,7 +116,7 @@ const Hero = () => {
             </div>
 
             {/* Floating decorative elements */}
-            <div className="absolute -top-6 -left-6 w-12 h-12 bg-primary/20 rounded-full animate-pulse"></div>
+            <div className="absolute -top-6 -left-6 w-12 h-12 rounded-full animate-pulse bg-slate-400"></div>
             <div className="absolute -bottom-6 -right-6 w-8 h-8 bg-blue-600/30 rounded-full animate-pulse delay-300"></div>
             <div className="absolute top-1/2 -right-8 w-6 h-6 bg-purple-600/20 rounded-full animate-pulse delay-150"></div>
           </div>
@@ -142,16 +127,11 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="flex flex-col items-center gap-2 animate-bounce">
           <span className="text-sm text-muted-foreground">Scroll to explore</span>
-          <button 
-            onClick={() => scrollToSection("about")}
-            className="p-3 rounded-full bg-white/80 backdrop-blur-sm border border-white/20 hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
+          <button onClick={() => scrollToSection("about")} className="p-3 rounded-full bg-white/80 backdrop-blur-sm border border-white/20 hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl">
             <ArrowDown className="w-5 h-5 text-primary" />
           </button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
