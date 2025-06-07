@@ -211,7 +211,7 @@ const Contact = () => {
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div className="p-3 bg-background rounded-lg">
-                    <div className="font-bold text-primary">< 24hrs</div>
+                    <div className="font-bold text-primary">&lt; 24hrs</div>
                     <div className="text-xs text-muted-foreground">Email Response</div>
                   </div>
                   <div className="p-3 bg-background rounded-lg">
